@@ -1,0 +1,241 @@
+/* Element Styling */
+
+* {
+  margin: 0;  
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  width: 90%;
+  margin: auto;
+  font-family: 'Merriweather', serif;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 4px;
+  margin-bottom: 1.5em;
+  font-size: 18px;
+}
+
+header {
+  display: block;
+  text-align: center;
+  background-color: #26313d;
+  color: white;
+  height: 50px;
+  width: 100%;
+  font-size: 8px;
+  margin: auto;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 11px;
+}
+
+input:focus::placeholder-shown {
+  text-align: left;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+}
+
+
+input[id="zipcode"] {
+  width: 30%;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border: 1px solid rgba(18, 22, 69, 1);
+  padding: 9px;
+}
+
+select {
+  height: 38px;
+}
+
+
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zipcode"] {
+  float: left;
+  font-family: 'Merriweather', serif;
+  color: grey;
+  vertical-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  min-width: 25%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0px 10px 10px 0px;
+}
+
+/*Basic Styling*/
+
+
+.Signuptitle {
+  display: block;
+  border-bottom: 4px solid black;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 1.25em;
+}
+
+.Signuptitle p {
+  color: lightgrey;
+  font-size: 14px;
+}
+
+.Signuptitle h2 {
+  padding-bottom: 1.5em;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  padding-top: 2.5em;
+  border-top: 2px solid black;
+}
+
+label[for="Newsletter"],
+label[for="Newsletterformat"],
+label[for="other"]{
+  color: grey;
+  display: block;
+  font-size: 12px;
+}
+
+label[for="HTML"],
+label[for="CSS"],
+label[for="JS"],
+label[for="HTMLform"],
+label[for="Plain"]
+{
+  color: grey;
+  overflow: clear;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+button {
+  padding: 18px 28px 18px 38px;
+  color: #FFF;
+  background-color: #30a39f;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  
+  .Signuptitle,
+  .ContactInfo {
+    width: 65%;
+  }
+  
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zipcode"] {
+  float: left;
+  font-family: 'Merriweather', serif;
+  color: grey;
+  vertical-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  min-width: 25%;
+}
+  
+.Signuptitle {
+  display: block;
+  border-bottom: 4px solid black;
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  line-height: 2em;
+}
+
+  
+.float {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+}
+  
+.Signuptitle p {
+  color: lightgrey;
+  font-size: 12px;
+}
+  
+.Signuptitle h2 {
+  font-size: 20px;
+  padding-bottom: 0;
+}
+  
+}
